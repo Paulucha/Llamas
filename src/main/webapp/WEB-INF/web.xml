@@ -7,9 +7,12 @@
     <data-source>
         <name>java:ds/lamabook</name>
         <class-name>com.mysql.cj.jdbc.MysqlDataSource</class-name>
-        <url>jdbc:mysql://0.0.0.0:3307/lamabook?useLegacyDatetimeCode=false&amp;serverTimezone=Europe/Warsaw</url>
+        <url>jdbc:mysql://127.0.0.1:3307/lamabook?useLegacyDatetimeCode=false&amp;serverTimezone=Europe/Warsaw</url>
         <user>root</user>
         <password>pass123</password>
     </data-source>
+    <welcome-file-list>
+        <welcome-file>/lama</welcome-file>
+    </welcome-file-list>
 
 </web-app>
