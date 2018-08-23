@@ -15,8 +15,8 @@ public class LamaDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public Long save(Lama lama) {
-        entityManager.persist(lama);
+    public Integer save(Lama lama) {
+        entityManager.merge(lama);
         return lama.getId();
     }
 
@@ -39,5 +39,12 @@ public class LamaDao {
         final Query query = entityManager.createQuery("SELECT l FROM Lama l");
 
         return query.getResultList();
+    }
+    public Integer getLastId() {
+        Query queryLastId = entityManager.createQuery("SELECT MAX(l.id) FROM Lama l");
+        if (queryLastId != null) {
+            return (Integer) queryLastId.getSingleResult();
+        }
+        else return 1;
     }
 }

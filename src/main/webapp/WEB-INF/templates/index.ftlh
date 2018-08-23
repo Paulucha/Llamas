@@ -12,11 +12,20 @@
 
 </head>
 <body>
+
+    <#if message??>
+        <h5>${message}</h5>
+    </#if>
+
 <h1>Hello, Lama World</h1>
 <img src="https://i.pinimg.com/originals/f8/12/8c/f8128c045ac5bda679971ab7bacace1e.jpg" width="100px">
+<section class="content-section bg-light" id="lamaList">
+    <#include "lamaList.ftlh">
+</section>
 <section class="content-section bg-light" id="addLama">
 <#include "addLamaForm.ftlh">
 </section>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

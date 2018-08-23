@@ -1,7 +1,6 @@
 package com.LamaBook.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Entity
@@ -10,23 +9,23 @@ public class Lama {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+    @Column(name = "id", unique = true, nullable = false)
+    private Integer id;
 
     @Column(name = "login")
-    @NotNull
+//    @NotNull
     private String login;
 
     @Column(name = "password")
-    @NotNull
+//    @NotNull
     private String password;
 
     @Column(name = "name")
-    @NotNull
+//    @NotNull
     private String name;
 
     @Column(name = "date_of_birth")
-    @NotNull
+//    @NotNull
     private LocalDate dateOfBirth;
 
     @Column(name = "pic")
@@ -35,7 +34,10 @@ public class Lama {
     @Column(name = "bio")
     private String bio;
 
-    public Lama(@NotNull String login, @NotNull String password, @NotNull String name, @NotNull LocalDate dateOfBirth, String photoURL, String bio) {
+    public Lama() {
+    }
+
+    public Lama(String login, String password, String name, LocalDate dateOfBirth, String photoURL, String bio) {
         this.login = login;
         this.password = password;
         this.name = name;
@@ -44,50 +46,43 @@ public class Lama {
         this.bio = bio;
     }
 
-    public Lama() {
-    }
-
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    @NotNull
     public String getLogin() {
         return login;
     }
 
-    public void setLogin(@NotNull String login) {
+    public void setLogin(String login) {
         this.login = login;
     }
 
-    @NotNull
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(@NotNull String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    @NotNull
     public String getName() {
         return name;
     }
 
-    public void setName(@NotNull String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    @NotNull
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(@NotNull LocalDate dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
