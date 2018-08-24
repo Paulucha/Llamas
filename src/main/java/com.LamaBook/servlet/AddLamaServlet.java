@@ -72,7 +72,7 @@ public class AddLamaServlet extends HttpServlet {
         File file = null;
         try {
             file = photoUpload.uploadImageFile(filePart);
-            lama.setPhotoURL("/images/" + file.getName());
+            lama.setPhotoURL("/lamasImages/" + file.getName());
         } catch (UserImageNotFound userImageNotFound) {
             logger.info(userImageNotFound.getMessage());
         }

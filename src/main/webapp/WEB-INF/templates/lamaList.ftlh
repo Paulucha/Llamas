@@ -1,8 +1,8 @@
 <div>
 <#if lamas??>
-    <h1>
-        Lista lam:
-    </h1>
+    <h3>
+        Lamas in our network:
+    </h3>
 
 
    <#list lamas>
@@ -17,7 +17,7 @@
      </#if>
     <#if (lama.photoURL)??>
         <li>
-            <img width="200" src=" ${lama.photoURL}"/>
+            <img width="100" src="../../${lama.photoURL}"/>
         </li>
     </#if>
 </ul>
