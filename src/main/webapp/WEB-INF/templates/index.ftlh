@@ -33,6 +33,9 @@
 </div>
 <div class="row">
     <div class="col">
+        <section class="content-section bg-light" id="signLama">
+        <#include "logingForm.ftlh">
+        </section>
     </div>
     <div class="col">
         <section class="content-section bg-light" id="addLama">

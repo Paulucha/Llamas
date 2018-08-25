@@ -1,6 +1,6 @@
 <div class="container">
     <h3>
-        Add new userLama:
+        Create new user Lama:
     </h3>
     <div class="row">
         <div class="col"></div>
@@ -8,29 +8,29 @@
             <form method="post" action="/addLama" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Lama name</label>
-                    <input type="text" class="form-control" name="name" placeholder="Enter name">
+                    <input type="text" class="form-control form-control-sm" name="name" placeholder="Enter name">
                 </div>
                 <div class="form-group">
                     <label for="login">Lama login</label>
-                    <input type="text" class="form-control" name="login" placeholder="Enter login">
+                    <input type="text" class="form-control form-control-sm" name="login" placeholder="Enter login">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password"  placeholder="Password">
+                    <input type="password" class="form-control form-control-sm" name="password"  placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Lama profile photo</label>
-                    <input type="file" class="form-control-file" name="photoURL" >
+                    <input type="file" class="form-control-file form-control-sm" name="photoURL" >
                 </div>
                 <div class="form-group">
                     <label for="birthDate">Birth Date</label>
-                    <input type="date" class="form-control" name="dateOfBirth"  placeholder="date">
+                    <input type="date" class="form-control form-control-sm" name="dateOfBirth"  placeholder="date">
                 </div>
                 <div class="form-group">
                     <label for="bio">Bio</label>
-                    <textarea class="form-control" name="bio" rows="3"></textarea>
+                    <textarea class="form-control form-control-sm" name="bio" rows="3"></textarea>
                 </div>
-                <button type="submit"  class="btn btn-primary">Submit</button>
+                <button type="submit"  class="btn btn-primary">Add new Lama User</button>
             </form>
 
 

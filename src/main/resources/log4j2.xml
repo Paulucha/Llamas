@@ -2,7 +2,7 @@
 <Configuration status="debug">
 
     <Properties>
-        <Property name="basePath">/src/logs/</Property>
+        <Property name="basePath">C:/Users/Paulucha/Desktop/programowanie/PROJECTS/LamaBook/src/logs</Property>
     </Properties>
 
     <Appenders>
