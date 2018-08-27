@@ -34,6 +34,8 @@ public class Lama {
     @Column(name = "bio")
     private String bio;
 
+    public boolean valid;
+
     public Lama() {
     }
 
@@ -44,6 +46,14 @@ public class Lama {
         this.dateOfBirth = dateOfBirth;
         this.photoURL = photoURL;
         this.bio = bio;
+    }
+
+    public boolean isValid() {
+        return valid;
+    }
+
+    public void setValid(boolean valid) {
+        this.valid = valid;
     }
 
     public Integer getId() {
