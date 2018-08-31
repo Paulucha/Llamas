@@ -35,11 +35,11 @@
                     Go home Lama!</a></h4>
                 <br><br>
                 <hr>
-                Still error? <br>  <a
+                Still an error occurs? <br>  <a
                     href="mailto:pauluchp@gmail.com"> Contact Us.</a>
             </div>
             <div class="col">
-                <img src="../../styles/images/Alpaca-512.png">
+                <img src="../../styles/images/LnYCjvdR_400x400.jpg">
             </div>
 
         </div>

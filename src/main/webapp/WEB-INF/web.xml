@@ -14,5 +14,7 @@
     <welcome-file-list>
         <welcome-file>/lama</welcome-file>
     </welcome-file-list>
-
+    <error-page>
+        <location>/error</location>
+    </error-page>
 </web-app>
