@@ -1,0 +1,2 @@
+[WARN ] 2018-08-31 11:33:21.982 [default task-1] ErrorServlet - Error from servlet Unknown. Error code: null. Exception: null
+[WARN ] 2018-08-31 11:36:02.827 [default task-1] ErrorServlet - Error from servlet default. Error code: 404. Exception: null
